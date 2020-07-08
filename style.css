@@ -1,0 +1,284 @@
+
+body
+{
+	margin:0;
+	font-family: verdana;
+}
+*
+{
+	text-decoration: none;
+	font-weight: normal;
+	border:0;
+}
+.header
+{
+	position: fixed;
+	width: 100%;
+	background: black;
+	line-height: 40px;
+	z-index: 10000000;
+}
+.header>a
+{
+	color:white;
+	padding: 1%;
+	cursor: pointer;
+}
+
+
+.about
+{
+	padding: 5%;
+	background: #2196f3;
+}
+.about>button
+{
+	padding: 10px;
+	background: black;
+	color:white;
+}
+.contact
+{
+	padding: 5%;
+	background: black;
+	color:white;
+}
+.contact>input
+{
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 1%;
+}
+.contact>button
+{
+	padding: 10px;
+	background: tomato;
+	color:white;
+	font-size: 105%;
+}
+
+
+.services
+{
+	padding: 5%;
+	background:#673ab7;
+	color:white;
+	text-align: center;
+}
+.services>.flex
+{	
+	display: flex;
+	flex-flow: wrap;
+}
+.services>.flex>.item
+{
+	width: 21%;
+	margin: 1%;
+	padding: 1%;
+}
+
+.team
+{
+	padding: 5%;
+	text-align: center;	
+	background: #009688;
+}
+.team>.flex
+{
+	display: flex;
+}
+.team>.flex>.item
+{
+	width: 100%;
+	margin: 1%;
+	padding: 1%;
+	background: white;
+	box-shadow:0 10px 10px black;
+}
+.team>.flex>.item>.image
+{
+	padding: 25%;
+	background:black;
+	color:white;
+}
+.team>.flex>.item>button
+{
+	padding: 10px;
+	width: 100%;
+	background: black;
+	color:white;
+}
+
+.newsletter
+{
+	padding: 5%;
+	background: #795548;
+	color:white;
+}
+.newsletter>input
+{
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 1%;
+}
+.newsletter>button
+{
+	padding: 10px;
+	font-size: 105%;
+	background: orange;
+}
+
+.price
+{
+	padding: 5%;
+	background: #ff5722;
+	text-align: center;
+}
+.price>.flex
+{
+	display: flex;
+}
+.price>.flex>.item
+{
+	width: 100%;
+	margin: 1%;
+	background: white;
+	box-shadow:0 10px 10px black;
+}
+.price>.flex>.item>.h
+{
+	padding: 5%;
+	background: black;
+	color:white;
+	font-size: 200%;
+}
+.price>.flex>.item>.b
+{
+	padding: 2%;
+	line-height: 40px;
+}
+.price>.flex>.item>.b>big
+{	
+	font-size: 200%;
+	font-family:impact;
+}
+.price>.flex>.item>.f
+{
+	background: silver;
+	padding: 5%;
+}
+.price>.flex>.item>.f>button
+{
+	padding: 10px;
+	background: black;
+	color:white;
+}
+
+.footer
+{
+	background: black;
+	line-height: 100px;
+	text-align: center;
+	color:white;
+	text-transform: capitalize;
+}
+.footer>a
+{
+	color:tomato;
+	text-transform: uppercase;
+}
+
+
+.work
+{
+	padding: 5%;
+	background:#2196f3;
+	color:white;
+}
+.work>h1
+{
+	text-align: center;
+}
+.work>.flex
+{
+	display: flex;
+}
+.work>.flex>.left
+{
+	width: 45%;
+}
+.work>.flex>.left>.image
+{
+	padding: 30%;
+	background: black;
+	color:white;
+	text-align: center;
+}
+.work>.flex>.right
+{
+	width: 50%;
+	padding-left: 4%;
+}
+.work>.flex>.right>p
+{
+	letter-spacing: 10px;
+}
+.work>.flex>.right>.white
+{
+	background: white;
+	line-height: 40px;
+}
+.work>.flex>.right>.white>.black
+{
+	background: black;
+	text-align: center;
+}
+
+
+
+
+@media (max-width:700px)
+{
+	.header
+	{
+		position: static;
+	}
+	.header>a
+	{
+		display: block;
+		text-align: center;
+	}
+	.services>.flex>.item
+	{
+		padding: 0;
+		margin:0;
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	.team>.flex
+	{
+		flex-flow: column;
+	}
+	.team>.flex>.item
+	{
+		width: auto;
+	}
+	.work>.flex
+	{
+		flex-flow: column;
+	}
+	.work>.flex>.left
+	{
+		width: 100%;
+		padding: 0;
+	}
+	.work>.flex>.right
+	{
+		padding: 0;
+		width: 100%;
+	}
+	.price>.flex
+	{
+		flex-flow: column;
+	}
+}
